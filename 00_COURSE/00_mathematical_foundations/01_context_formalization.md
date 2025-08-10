@@ -381,7 +381,7 @@ class ComponentAnalyzer:
     def _count_tokens(self, text: str) -> int:
         """Estimate token count (simplified)"""
         # Rough approximation: 1 token ≈ 0.75 words
-        return int(len(text.split()) * 0.75)
+        return int(len(text.split()) / 0.75)
 
 class ContextAssembler:
     """Assemble context components using various strategies"""
